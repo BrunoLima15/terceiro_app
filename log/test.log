@@ -1,0 +1,622 @@
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (14.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (10.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (0)[0m
+  [1m[35m (11.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (2.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2020-01-30 08:35:03.722613"], ["updated_at", "2020-01-30 08:35:03.722613"]]
+  [1m[35m (10.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (2.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "cd30cd0b9a3056f1b8c2fb545fbdffdbf3ae8af7"], ["created_at", "2020-01-30 08:35:03.741953"], ["updated_at", "2020-01-30 08:35:03.741953"]]
+  [1m[35m (10.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (18.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (16.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (21.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (0)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (14.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (14.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (0)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (15.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (2.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2020-01-30 08:35:04.442895"], ["updated_at", "2020-01-30 08:35:04.442895"]]
+  [1m[35m (11.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (2.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "cd30cd0b9a3056f1b8c2fb545fbdffdbf3ae8af7"], ["created_at", "2020-01-30 08:35:04.469848"], ["updated_at", "2020-01-30 08:35:04.469848"]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (2.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2020-01-30 08:35:04.472734"], ["updated_at", "2020-01-30 08:35:04.472734"]]
+  [1m[35m (12.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (12.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (2.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "cd30cd0b9a3056f1b8c2fb545fbdffdbf3ae8af7"], ["created_at", "2020-01-30 08:35:04.501417"], ["updated_at", "2020-01-30 08:35:04.501417"]]
+  [1m[35m (12.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------------
+PaginasEstaticasControllerTest: test_should_get_ajuda
+-----------------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------------
+PaginasEstaticasControllerTest: test_should_get_inicio
+------------------------------------------------------
+Started GET "/paginas_estaticas/inicio" for 127.0.0.1 at 2020-01-30 05:35:05 -0300
+Started GET "/paginas_estaticas/ajuda" for 127.0.0.1 at 2020-01-30 05:35:05 -0300
+Processing by PaginasEstaticasController#inicio as HTML
+Processing by PaginasEstaticasController#ajuda as HTML
+  Rendering paginas_estaticas/inicio.html.erb within layouts/application
+  Rendering paginas_estaticas/ajuda.html.erb within layouts/application
+  Rendered paginas_estaticas/inicio.html.erb within layouts/application (Duration: 3.5ms | Allocations: 221)
+  Rendered paginas_estaticas/ajuda.html.erb within layouts/application (Duration: 10.6ms | Allocations: 218)
+[Webpacker] Compiling…
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+[Webpacker] Hash: 210aaddd6a023e742316
+Version: webpack 4.41.5
+Time: 989ms
+Built at: 01/30/2020 5:35:19 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-bbd93bef4bc3cc9bcf57.js   6.71 KiB  application  [emitted] [immutable]  application
+js/application-bbd93bef4bc3cc9bcf57.js.map   3.53 KiB  application  [emitted] [dev]        application
+                             manifest.json  384 bytes               [emitted]              
+Entrypoint application = js/application-bbd93bef4bc3cc9bcf57.js js/application-bbd93bef4bc3cc9bcf57.js.map
+[./app/javascript/packs/application.js] 2.81 KiB {application} [built] [failed] [1 error]
+
+ERROR in ./app/javascript/packs/application.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+Error: Package exports for '/mnt/c/projetos/terceiro_app/node_modules/@babel/helper-compilation-targets' do not define a '.' subpath
+    at applyExports (internal/modules/cjs/loader.js:485:15)
+    at resolveExports (internal/modules/cjs/loader.js:508:12)
+    at Function.Module._findPath (internal/modules/cjs/loader.js:577:20)
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:879:27)
+    at Function.Module._load (internal/modules/cjs/loader.js:785:27)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at Object.<anonymous> (/mnt/c/projetos/terceiro_app/node_modules/@babel/preset-env/lib/debug.js:8:33)
+    at Module._compile (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at Object.<anonymous> (/mnt/c/projetos/terceiro_app/node_modules/@babel/preset-env/lib/index.js:11:14)
+    at Module._compile (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at requireModule (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/files/plugins.js:165:12)
+    at loadPreset (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/files/plugins.js:83:17)
+    at createDescriptor (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:154:9)
+    at /mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:109:50
+    at Array.map (<anonymous>)
+    at createDescriptors (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:109:29)
+    at createPresetDescriptors (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:101:10)
+    at presets (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:47:19)
+    at mergeChainOpts (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-chain.js:320:26)
+
+Completed 200 OK in 14153ms (Views: 14133.0ms | ActiveRecord: 0.0ms | Allocations: 1343005)
+[Webpacker] Compilation failed:
+
+[Webpacker] Hash: 210aaddd6a023e742316
+Version: webpack 4.41.5
+Time: 985ms
+Built at: 01/30/2020 5:35:19 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-bbd93bef4bc3cc9bcf57.js   6.71 KiB  application  [emitted] [immutable]  application
+js/application-bbd93bef4bc3cc9bcf57.js.map   3.53 KiB  application  [emitted] [dev]        application
+                             manifest.json  384 bytes               [emitted]              
+Entrypoint application = js/application-bbd93bef4bc3cc9bcf57.js js/application-bbd93bef4bc3cc9bcf57.js.map
+[./app/javascript/packs/application.js] 2.81 KiB {application} [built] [failed] [1 error]
+
+ERROR in ./app/javascript/packs/application.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+Error: Package exports for '/mnt/c/projetos/terceiro_app/node_modules/@babel/helper-compilation-targets' do not define a '.' subpath
+    at applyExports (internal/modules/cjs/loader.js:485:15)
+    at resolveExports (internal/modules/cjs/loader.js:508:12)
+    at Function.Module._findPath (internal/modules/cjs/loader.js:577:20)
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:879:27)
+    at Function.Module._load (internal/modules/cjs/loader.js:785:27)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at Object.<anonymous> (/mnt/c/projetos/terceiro_app/node_modules/@babel/preset-env/lib/debug.js:8:33)
+    at Module._compile (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at Object.<anonymous> (/mnt/c/projetos/terceiro_app/node_modules/@babel/preset-env/lib/index.js:11:14)
+    at Module._compile (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at requireModule (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/files/plugins.js:165:12)
+    at loadPreset (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/files/plugins.js:83:17)
+    at createDescriptor (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:154:9)
+    at /mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:109:50
+    at Array.map (<anonymous>)
+    at createDescriptors (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:109:29)
+    at createPresetDescriptors (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:101:10)
+    at presets (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:47:19)
+    at mergeChainOpts (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-chain.js:320:26)
+
+Completed 200 OK in 14160ms (Views: 14140.4ms | ActiveRecord: 0.0ms | Allocations: 1342966)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------------
+PaginasEstaticasControllerTest: test_should_get_inicio
+------------------------------------------------------
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------------
+PaginasEstaticasControllerTest: test_should_get_ajuda
+-----------------------------------------------------
+Started GET "/paginas_estaticas/inicio" for 127.0.0.1 at 2020-01-30 05:43:48 -0300
+Started GET "/paginas_estaticas/ajuda" for 127.0.0.1 at 2020-01-30 05:43:48 -0300
+Processing by PaginasEstaticasController#inicio as HTML
+Processing by PaginasEstaticasController#ajuda as HTML
+  Rendering paginas_estaticas/ajuda.html.erb within layouts/application
+  Rendering paginas_estaticas/inicio.html.erb within layouts/application
+  Rendered paginas_estaticas/ajuda.html.erb within layouts/application (Duration: 3.2ms | Allocations: 218)
+  Rendered paginas_estaticas/inicio.html.erb within layouts/application (Duration: 3.1ms | Allocations: 221)
+[Webpacker] Compiling…
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+[Webpacker] Hash: 210aaddd6a023e742316
+Version: webpack 4.41.5
+Time: 1012ms
+Built at: 01/30/2020 5:44:02 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-bbd93bef4bc3cc9bcf57.js   6.71 KiB  application  [emitted] [immutable]  application
+js/application-bbd93bef4bc3cc9bcf57.js.map   3.53 KiB  application  [emitted] [dev]        application
+                             manifest.json  384 bytes               [emitted]              
+Entrypoint application = js/application-bbd93bef4bc3cc9bcf57.js js/application-bbd93bef4bc3cc9bcf57.js.map
+[./app/javascript/packs/application.js] 2.81 KiB {application} [built] [failed] [1 error]
+
+ERROR in ./app/javascript/packs/application.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+Error: Package exports for '/mnt/c/projetos/terceiro_app/node_modules/@babel/helper-compilation-targets' do not define a '.' subpath
+    at applyExports (internal/modules/cjs/loader.js:485:15)
+    at resolveExports (internal/modules/cjs/loader.js:508:12)
+    at Function.Module._findPath (internal/modules/cjs/loader.js:577:20)
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:879:27)
+    at Function.Module._load (internal/modules/cjs/loader.js:785:27)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at Object.<anonymous> (/mnt/c/projetos/terceiro_app/node_modules/@babel/preset-env/lib/debug.js:8:33)
+    at Module._compile (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at Object.<anonymous> (/mnt/c/projetos/terceiro_app/node_modules/@babel/preset-env/lib/index.js:11:14)
+    at Module._compile (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at requireModule (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/files/plugins.js:165:12)
+    at loadPreset (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/files/plugins.js:83:17)
+    at createDescriptor (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:154:9)
+    at /mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:109:50
+    at Array.map (<anonymous>)
+    at createDescriptors (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:109:29)
+    at createPresetDescriptors (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:101:10)
+    at presets (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:47:19)
+    at mergeChainOpts (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-chain.js:320:26)
+
+Completed 200 OK in 14277ms (Views: 14259.9ms | ActiveRecord: 0.0ms | Allocations: 1338550)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------------
+PaginasEstaticasControllerTest: test_should_get_sobre
+-----------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+[Webpacker] Compilation failed:
+
+[Webpacker] Hash: 210aaddd6a023e742316
+Version: webpack 4.41.5
+Time: 1012ms
+Built at: 01/30/2020 5:44:02 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-bbd93bef4bc3cc9bcf57.js   6.71 KiB  application  [emitted] [immutable]  application
+js/application-bbd93bef4bc3cc9bcf57.js.map   3.53 KiB  application  [emitted] [dev]        application
+                             manifest.json  384 bytes               [emitted]              
+Entrypoint application = js/application-bbd93bef4bc3cc9bcf57.js js/application-bbd93bef4bc3cc9bcf57.js.map
+[./app/javascript/packs/application.js] 2.81 KiB {application} [built] [failed] [1 error]
+
+ERROR in ./app/javascript/packs/application.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+Error: Package exports for '/mnt/c/projetos/terceiro_app/node_modules/@babel/helper-compilation-targets' do not define a '.' subpath
+    at applyExports (internal/modules/cjs/loader.js:485:15)
+    at resolveExports (internal/modules/cjs/loader.js:508:12)
+    at Function.Module._findPath (internal/modules/cjs/loader.js:577:20)
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:879:27)
+    at Function.Module._load (internal/modules/cjs/loader.js:785:27)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at Object.<anonymous> (/mnt/c/projetos/terceiro_app/node_modules/@babel/preset-env/lib/debug.js:8:33)
+    at Module._compile (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at Object.<anonymous> (/mnt/c/projetos/terceiro_app/node_modules/@babel/preset-env/lib/index.js:11:14)
+    at Module._compile (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at requireModule (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/files/plugins.js:165:12)
+    at loadPreset (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/files/plugins.js:83:17)
+    at createDescriptor (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:154:9)
+    at /mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:109:50
+    at Array.map (<anonymous>)
+    at createDescriptors (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:109:29)
+    at createPresetDescriptors (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:101:10)
+    at presets (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:47:19)
+    at mergeChainOpts (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-chain.js:320:26)
+
+Completed 200 OK in 14313ms (Views: 14295.1ms | ActiveRecord: 0.0ms | Allocations: 1338551)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------------
+PaginasEstaticasControllerTest: test_should_get_sobre
+-----------------------------------------------------
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------------
+PaginasEstaticasControllerTest: test_should_get_ajuda
+-----------------------------------------------------
+Started GET "/paginas_estaticas/sobre" for 127.0.0.1 at 2020-01-30 05:47:56 -0300
+Started GET "/paginas_estaticas/ajuda" for 127.0.0.1 at 2020-01-30 05:47:56 -0300
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------------
+PaginasEstaticasControllerTest: test_should_get_inicio
+------------------------------------------------------
+Processing by PaginasEstaticasController#ajuda as HTML
+Started GET "/paginas_estaticas/inicio" for 127.0.0.1 at 2020-01-30 05:47:56 -0300
+  Rendering paginas_estaticas/ajuda.html.erb within layouts/application
+  Rendered paginas_estaticas/ajuda.html.erb within layouts/application (Duration: 5.0ms | Allocations: 218)
+Processing by PaginasEstaticasController#inicio as HTML
+  Rendering paginas_estaticas/inicio.html.erb within layouts/application
+  Rendered paginas_estaticas/inicio.html.erb within layouts/application (Duration: 3.4ms | Allocations: 221)
+[Webpacker] Compiling…
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+[Webpacker] Hash: 210aaddd6a023e742316
+Version: webpack 4.41.5
+Time: 1001ms
+Built at: 01/30/2020 5:48:11 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-bbd93bef4bc3cc9bcf57.js   6.71 KiB  application  [emitted] [immutable]  application
+js/application-bbd93bef4bc3cc9bcf57.js.map   3.53 KiB  application  [emitted] [dev]        application
+                             manifest.json  384 bytes               [emitted]              
+Entrypoint application = js/application-bbd93bef4bc3cc9bcf57.js js/application-bbd93bef4bc3cc9bcf57.js.map
+[./app/javascript/packs/application.js] 2.81 KiB {application} [built] [failed] [1 error]
+
+ERROR in ./app/javascript/packs/application.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+Error: Package exports for '/mnt/c/projetos/terceiro_app/node_modules/@babel/helper-compilation-targets' do not define a '.' subpath
+    at applyExports (internal/modules/cjs/loader.js:485:15)
+    at resolveExports (internal/modules/cjs/loader.js:508:12)
+    at Function.Module._findPath (internal/modules/cjs/loader.js:577:20)
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:879:27)
+    at Function.Module._load (internal/modules/cjs/loader.js:785:27)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at Object.<anonymous> (/mnt/c/projetos/terceiro_app/node_modules/@babel/preset-env/lib/debug.js:8:33)
+    at Module._compile (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at Object.<anonymous> (/mnt/c/projetos/terceiro_app/node_modules/@babel/preset-env/lib/index.js:11:14)
+    at Module._compile (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at requireModule (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/files/plugins.js:165:12)
+    at loadPreset (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/files/plugins.js:83:17)
+    at createDescriptor (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:154:9)
+    at /mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:109:50
+    at Array.map (<anonymous>)
+    at createDescriptors (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:109:29)
+    at createPresetDescriptors (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:101:10)
+    at presets (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:47:19)
+    at mergeChainOpts (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-chain.js:320:26)
+
+Completed 200 OK in 15228ms (Views: 15211.5ms | ActiveRecord: 0.0ms | Allocations: 1338542)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+[Webpacker] Compilation failed:
+
+[Webpacker] Hash: 210aaddd6a023e742316
+Version: webpack 4.41.5
+Time: 988ms
+Built at: 01/30/2020 5:48:11 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-bbd93bef4bc3cc9bcf57.js   6.71 KiB  application  [emitted] [immutable]  application
+js/application-bbd93bef4bc3cc9bcf57.js.map   3.53 KiB  application  [emitted] [dev]        application
+                             manifest.json  384 bytes               [emitted]              
+Entrypoint application = js/application-bbd93bef4bc3cc9bcf57.js js/application-bbd93bef4bc3cc9bcf57.js.map
+[./app/javascript/packs/application.js] 2.81 KiB {application} [built] [failed] [1 error]
+
+ERROR in ./app/javascript/packs/application.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+Error: Package exports for '/mnt/c/projetos/terceiro_app/node_modules/@babel/helper-compilation-targets' do not define a '.' subpath
+    at applyExports (internal/modules/cjs/loader.js:485:15)
+    at resolveExports (internal/modules/cjs/loader.js:508:12)
+    at Function.Module._findPath (internal/modules/cjs/loader.js:577:20)
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:879:27)
+    at Function.Module._load (internal/modules/cjs/loader.js:785:27)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at Object.<anonymous> (/mnt/c/projetos/terceiro_app/node_modules/@babel/preset-env/lib/debug.js:8:33)
+    at Module._compile (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at Object.<anonymous> (/mnt/c/projetos/terceiro_app/node_modules/@babel/preset-env/lib/index.js:11:14)
+    at Module._compile (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at requireModule (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/files/plugins.js:165:12)
+    at loadPreset (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/files/plugins.js:83:17)
+    at createDescriptor (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:154:9)
+    at /mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:109:50
+    at Array.map (<anonymous>)
+    at createDescriptors (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:109:29)
+    at createPresetDescriptors (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:101:10)
+    at presets (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:47:19)
+    at mergeChainOpts (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-chain.js:320:26)
+
+Completed 200 OK in 15322ms (Views: 15295.5ms | ActiveRecord: 0.0ms | Allocations: 1338550)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------------
+PaginasEstaticasControllerTest: test_should_get_inicio
+------------------------------------------------------
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------------
+PaginasEstaticasControllerTest: test_should_get_ajuda
+-----------------------------------------------------
+Started GET "/paginas_estaticas/inicio" for 127.0.0.1 at 2020-01-30 05:53:30 -0300
+Started GET "/paginas_estaticas/ajuda" for 127.0.0.1 at 2020-01-30 05:53:30 -0300
+Processing by PaginasEstaticasController#inicio as HTML
+Processing by PaginasEstaticasController#ajuda as HTML
+  Rendering paginas_estaticas/inicio.html.erb within layouts/application
+  Rendering paginas_estaticas/ajuda.html.erb within layouts/application
+  Rendered paginas_estaticas/ajuda.html.erb within layouts/application (Duration: 2.9ms | Allocations: 218)
+  Rendered paginas_estaticas/inicio.html.erb within layouts/application (Duration: 2.9ms | Allocations: 221)
+[Webpacker] Compiling…
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+[Webpacker] Hash: 210aaddd6a023e742316
+Version: webpack 4.41.5
+Time: 982ms
+Built at: 01/30/2020 5:53:44 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-bbd93bef4bc3cc9bcf57.js   6.71 KiB  application  [emitted] [immutable]  application
+js/application-bbd93bef4bc3cc9bcf57.js.map   3.53 KiB  application  [emitted] [dev]        application
+                             manifest.json  384 bytes               [emitted]              
+Entrypoint application = js/application-bbd93bef4bc3cc9bcf57.js js/application-bbd93bef4bc3cc9bcf57.js.map
+[./app/javascript/packs/application.js] 2.81 KiB {application} [built] [failed] [1 error]
+
+ERROR in ./app/javascript/packs/application.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+Error: Package exports for '/mnt/c/projetos/terceiro_app/node_modules/@babel/helper-compilation-targets' do not define a '.' subpath
+    at applyExports (internal/modules/cjs/loader.js:485:15)
+    at resolveExports (internal/modules/cjs/loader.js:508:12)
+    at Function.Module._findPath (internal/modules/cjs/loader.js:577:20)
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:879:27)
+    at Function.Module._load (internal/modules/cjs/loader.js:785:27)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at Object.<anonymous> (/mnt/c/projetos/terceiro_app/node_modules/@babel/preset-env/lib/debug.js:8:33)
+    at Module._compile (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at Object.<anonymous> (/mnt/c/projetos/terceiro_app/node_modules/@babel/preset-env/lib/index.js:11:14)
+    at Module._compile (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at requireModule (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/files/plugins.js:165:12)
+    at loadPreset (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/files/plugins.js:83:17)
+    at createDescriptor (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:154:9)
+    at /mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:109:50
+    at Array.map (<anonymous>)
+    at createDescriptors (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:109:29)
+    at createPresetDescriptors (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:101:10)
+    at presets (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:47:19)
+    at mergeChainOpts (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-chain.js:320:26)
+
+Completed 200 OK in 14036ms (Views: 14023.2ms | ActiveRecord: 0.0ms | Allocations: 1338551)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------------
+PaginasEstaticasControllerTest: test_should_get_sobre
+-----------------------------------------------------
+Started GET "/paginas_estaticas/sobre" for 127.0.0.1 at 2020-01-30 05:53:44 -0300
+[Webpacker] Compilation failed:
+
+[Webpacker] Hash: 210aaddd6a023e742316
+Version: webpack 4.41.5
+Time: 987ms
+Built at: 01/30/2020 5:53:44 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-bbd93bef4bc3cc9bcf57.js   6.71 KiB  application  [emitted] [immutable]  application
+js/application-bbd93bef4bc3cc9bcf57.js.map   3.53 KiB  application  [emitted] [dev]        application
+                             manifest.json  384 bytes               [emitted]              
+Entrypoint application = js/application-bbd93bef4bc3cc9bcf57.js js/application-bbd93bef4bc3cc9bcf57.js.map
+[./app/javascript/packs/application.js] 2.81 KiB {application} [built] [failed] [1 error]
+
+ERROR in ./app/javascript/packs/application.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+Error: Package exports for '/mnt/c/projetos/terceiro_app/node_modules/@babel/helper-compilation-targets' do not define a '.' subpath
+    at applyExports (internal/modules/cjs/loader.js:485:15)
+    at resolveExports (internal/modules/cjs/loader.js:508:12)
+    at Function.Module._findPath (internal/modules/cjs/loader.js:577:20)
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:879:27)
+    at Function.Module._load (internal/modules/cjs/loader.js:785:27)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at Object.<anonymous> (/mnt/c/projetos/terceiro_app/node_modules/@babel/preset-env/lib/debug.js:8:33)
+    at Module._compile (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at Object.<anonymous> (/mnt/c/projetos/terceiro_app/node_modules/@babel/preset-env/lib/index.js:11:14)
+    at Module._compile (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at requireModule (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/files/plugins.js:165:12)
+    at loadPreset (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/files/plugins.js:83:17)
+    at createDescriptor (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:154:9)
+    at /mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:109:50
+    at Array.map (<anonymous>)
+    at createDescriptors (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:109:29)
+    at createPresetDescriptors (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:101:10)
+    at presets (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:47:19)
+    at mergeChainOpts (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-chain.js:320:26)
+
+Completed 200 OK in 14073ms (Views: 14057.3ms | ActiveRecord: 0.0ms | Allocations: 1338552)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+Processing by PaginasEstaticasController#sobre as HTML
+  Rendering paginas_estaticas/sobre.html.erb within layouts/application
+  Rendered paginas_estaticas/sobre.html.erb within layouts/application (Duration: 9.6ms | Allocations: 107)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+[Webpacker] Hash: 210aaddd6a023e742316
+Version: webpack 4.41.5
+Time: 824ms
+Built at: 01/30/2020 5:53:51 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-bbd93bef4bc3cc9bcf57.js   6.71 KiB  application  [emitted] [immutable]  application
+js/application-bbd93bef4bc3cc9bcf57.js.map   3.53 KiB  application  [emitted] [dev]        application
+                             manifest.json  384 bytes               [emitted]              
+Entrypoint application = js/application-bbd93bef4bc3cc9bcf57.js js/application-bbd93bef4bc3cc9bcf57.js.map
+[./app/javascript/packs/application.js] 2.81 KiB {application} [built] [failed] [1 error]
+
+ERROR in ./app/javascript/packs/application.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+Error: Package exports for '/mnt/c/projetos/terceiro_app/node_modules/@babel/helper-compilation-targets' do not define a '.' subpath
+    at applyExports (internal/modules/cjs/loader.js:485:15)
+    at resolveExports (internal/modules/cjs/loader.js:508:12)
+    at Function.Module._findPath (internal/modules/cjs/loader.js:577:20)
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:879:27)
+    at Function.Module._load (internal/modules/cjs/loader.js:785:27)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at Object.<anonymous> (/mnt/c/projetos/terceiro_app/node_modules/@babel/preset-env/lib/debug.js:8:33)
+    at Module._compile (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at Object.<anonymous> (/mnt/c/projetos/terceiro_app/node_modules/@babel/preset-env/lib/index.js:11:14)
+    at Module._compile (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at requireModule (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/files/plugins.js:165:12)
+    at loadPreset (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/files/plugins.js:83:17)
+    at createDescriptor (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:154:9)
+    at /mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:109:50
+    at Array.map (<anonymous>)
+    at createDescriptors (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:109:29)
+    at createPresetDescriptors (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:101:10)
+    at presets (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:47:19)
+    at mergeChainOpts (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-chain.js:320:26)
+
+Completed 200 OK in 7313ms (Views: 7311.2ms | ActiveRecord: 0.0ms | Allocations: 2439)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
