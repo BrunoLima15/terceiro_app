@@ -119,3 +119,666 @@ Completed 200 OK in 8574ms (Views: 8571.5ms | ActiveRecord: 0.0ms | Allocations:
   [1m[35m (11.9ms)[0m  [1m[36mcommit transaction[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2020-02-10 12:19:44 -0300
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ApplicationController#ola as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 28ms (Views: 20.5ms | ActiveRecord: 0.0ms | Allocations: 1229)
+
+
+Started GET "/" for ::1 at 2020-02-10 12:47:54 -0300
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PaginasEstaticasController#inicio as HTML
+  Rendering paginas_estaticas/inicio.html.erb within layouts/application
+  Rendered paginas_estaticas/inicio.html.erb within layouts/application (Duration: 3.0ms | Allocations: 235)
+Completed 500 Internal Server Error in 75ms (ActiveRecord: 0.0ms | Allocations: 5754)
+
+
+Started GET "/" for ::1 at 2020-02-10 12:50:45 -0300
+Processing by PaginasEstaticasController#inicio as HTML
+  Rendering paginas_estaticas/inicio.html.erb within layouts/application
+  Rendered paginas_estaticas/inicio.html.erb within layouts/application (Duration: 1328.3ms | Allocations: 300808)
+Completed 500 Internal Server Error in 1339ms (ActiveRecord: 0.0ms | Allocations: 302065)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /mnt/c/projetos/terceiro_app/app/assets/config
+  /mnt/c/projetos/terceiro_app/app/assets/images
+  /mnt/c/projetos/terceiro_app/app/assets/stylesheets
+  /home/bruno/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actioncable-6.0.2.1/app/assets/javascripts
+  /home/bruno/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activestorage-6.0.2.1/app/assets/javascripts
+  /home/bruno/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionview-6.0.2.1/lib/assets/compiled
+  /home/bruno/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /mnt/c/projetos/terceiro_app/node_modules):
+    11: </h2>
+    12: <%= link_to 'Cadastre-se', '#', class: "btn btn-lg btn-primary" %>
+    13: </div>
+    14: <%= link_to image_tag("brasao.png", alt: "UFAL", width: "50px"),
+    15: "https://ufal.br" %>
+  
+app/assets/stylesheets/custom.scss:1
+app/views/paginas_estaticas/inicio.html.erb:14
+Started GET "/" for ::1 at 2020-02-10 12:56:31 -0300
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PaginasEstaticasController#inicio as HTML
+  Rendering paginas_estaticas/inicio.html.erb within layouts/application
+  Rendered paginas_estaticas/inicio.html.erb within layouts/application (Duration: 17154.3ms | Allocations: 1357473)
+Completed 500 Internal Server Error in 17236ms (ActiveRecord: 0.0ms | Allocations: 1364847)
+
+
+Started GET "/" for ::1 at 2020-02-10 12:57:36 -0300
+Processing by PaginasEstaticasController#inicio as HTML
+  Rendering paginas_estaticas/inicio.html.erb within layouts/application
+  Rendered paginas_estaticas/inicio.html.erb within layouts/application (Duration: 10.3ms | Allocations: 681)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms | Allocations: 2173)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield(:title)%> | Terceiro App Web II</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+  <%= link_to 'terceiro app', '#', id: 'logo' %>
+  <nav>
+  <ul class="nav navbar-nav navbar-right">
+  <li><%= link_to, 'Início', '#' %></li>
+  <li><%= link_to, 'Ajuda', '#' %></li>
+  <li><%= link_to, 'Entrar', '#' %></li>
+  </ul>
+  </nav>
+  </div>
+  </header>
+  <div class="container">
+  <%= yield %>
+  </div>
+  <footer class="navbar navbar-fixed-top navbar-inverse">
+<small>
+Terceiro App criado por Thiago
+</small>
+<nav>
+<ul class="nav navbar-nav navbar-right">
+<li><%= link_to, 'Sobre', '#' %></li>
+<li><%= link_to, 'Contato', '#' %></li>
+</ul>
+</nav>
+</footer>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <title><%= yield(:title)%> | Terceiro App Web II</title>
+5:        <%= csrf_meta_tags %>
+6:        <%= csp_meta_tag %>
+7:    
+8:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+9:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+10:      </head>
+11:    
+12:      <body>
+13:      <header class="navbar navbar-fixed-top navbar-inverse">
+14:      <div class="container">
+15:      <%= link_to 'terceiro app', '#', id: 'logo' %>
+16:      <nav>
+17:      <ul class="nav navbar-nav navbar-right">
+18:      <li><%= link_to, 'Início', '#' %></li>
+19:      <li><%= link_to, 'Ajuda', '#' %></li>
+20:      <li><%= link_to, 'Entrar', '#' %></li>
+21:      </ul>
+22:      </nav>
+23:      </div>
+24:      </header>
+25:      <div class="container">
+26:      <%= yield %>
+27:      </div>
+28:      <footer class="navbar navbar-fixed-top navbar-inverse">
+29:    <small>
+30:    Terceiro App criado por Thiago
+31:    </small>
+32:    <nav>
+33:    <ul class="nav navbar-nav navbar-right">
+34:    <li><%= link_to, 'Sobre', '#' %></li>
+35:    <li><%= link_to, 'Contato', '#' %></li>
+36:    </ul>
+37:    </nav>
+38:    </footer>
+39:      </body>
+40:    </html>
+  
+app/views/layouts/application.html.erb:18: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:19: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:20: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:34: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:35: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:18: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:19: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:20: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:34: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:35: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:18: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:19: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:20: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:34: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:35: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:18: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:19: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:20: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:34: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:35: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:18: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:19: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:20: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:34: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:35: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:18: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:19: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:20: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:34: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:35: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+Started GET "/" for ::1 at 2020-02-10 13:00:01 -0300
+Processing by PaginasEstaticasController#inicio as HTML
+  Rendering paginas_estaticas/inicio.html.erb within layouts/application
+  Rendered paginas_estaticas/inicio.html.erb within layouts/application (Duration: 10.2ms | Allocations: 841)
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 0.0ms | Allocations: 3099)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield(:title)%> | Terceiro App Web II</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+  <%= link_to 'terceiro app', '#', id: 'logo' %>
+  <nav>
+  <ul class="nav navbar-nav navbar-right">
+  <li><%= link_to 'Início', '#' %></li>
+  <li><%= link_to 'Ajuda', '#' %></li>
+  <li><%= link_to 'Entrar', '#' %></li>
+  </ul>
+  </nav>
+  </div>
+  </header>
+  <div class="container">
+  <%= yield %>
+  </div>
+  <footer class="navbar navbar-fixed-top navbar-inverse">
+<small>
+Terceiro App criado por Thiago
+</small>
+<nav>
+<ul class="nav navbar-nav navbar-right">
+<li><%= link_to, 'Sobre', '#' %></li>
+<li><%= link_to, 'Contato', '#' %></li>
+</ul>
+</nav>
+</footer>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <title><%= yield(:title)%> | Terceiro App Web II</title>
+5:        <%= csrf_meta_tags %>
+6:        <%= csp_meta_tag %>
+7:    
+8:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+9:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+10:      </head>
+11:    
+12:      <body>
+13:      <header class="navbar navbar-fixed-top navbar-inverse">
+14:      <div class="container">
+15:      <%= link_to 'terceiro app', '#', id: 'logo' %>
+16:      <nav>
+17:      <ul class="nav navbar-nav navbar-right">
+18:      <li><%= link_to 'Início', '#' %></li>
+19:      <li><%= link_to 'Ajuda', '#' %></li>
+20:      <li><%= link_to 'Entrar', '#' %></li>
+21:      </ul>
+22:      </nav>
+23:      </div>
+24:      </header>
+25:      <div class="container">
+26:      <%= yield %>
+27:      </div>
+28:      <footer class="navbar navbar-fixed-top navbar-inverse">
+29:    <small>
+30:    Terceiro App criado por Thiago
+31:    </small>
+32:    <nav>
+33:    <ul class="nav navbar-nav navbar-right">
+34:    <li><%= link_to, 'Sobre', '#' %></li>
+35:    <li><%= link_to, 'Contato', '#' %></li>
+36:    </ul>
+37:    </nav>
+38:    </footer>
+39:      </body>
+40:    </html>
+  
+app/views/layouts/application.html.erb:34: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:35: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:34: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:35: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:34: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:35: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:34: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:35: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:34: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:35: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:34: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+app/views/layouts/application.html.erb:35: syntax error, unexpected ',', expecting '.' or &. or :: or '['
+Started GET "/" for ::1 at 2020-02-10 13:00:24 -0300
+Processing by PaginasEstaticasController#inicio as HTML
+  Rendering paginas_estaticas/inicio.html.erb within layouts/application
+  Rendered paginas_estaticas/inicio.html.erb within layouts/application (Duration: 18.7ms | Allocations: 829)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+[Webpacker] Hash: 00107ee7c448224189d3
+Version: webpack 4.41.5
+Time: 2148ms
+Built at: 02/10/2020 1:00:38 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-c4cceb1b0fb96e82352b.js   6.71 KiB  application  [emitted] [immutable]  application
+js/application-c4cceb1b0fb96e82352b.js.map   3.53 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-c4cceb1b0fb96e82352b.js js/application-c4cceb1b0fb96e82352b.js.map
+[./app/javascript/packs/application.js] 2.81 KiB {application} [built] [failed] [1 error]
+
+ERROR in ./app/javascript/packs/application.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+Error: Package exports for '/mnt/c/projetos/terceiro_app/node_modules/@babel/helper-compilation-targets' do not define a '.' subpath
+    at applyExports (internal/modules/cjs/loader.js:485:15)
+    at resolveExports (internal/modules/cjs/loader.js:508:12)
+    at Function.Module._findPath (internal/modules/cjs/loader.js:577:20)
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:879:27)
+    at Function.Module._load (internal/modules/cjs/loader.js:785:27)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at Object.<anonymous> (/mnt/c/projetos/terceiro_app/node_modules/@babel/preset-env/lib/debug.js:8:33)
+    at Module._compile (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at Object.<anonymous> (/mnt/c/projetos/terceiro_app/node_modules/@babel/preset-env/lib/index.js:11:14)
+    at Module._compile (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at requireModule (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/files/plugins.js:165:12)
+    at loadPreset (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/files/plugins.js:83:17)
+    at createDescriptor (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:154:9)
+    at /mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:109:50
+    at Array.map (<anonymous>)
+    at createDescriptors (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:109:29)
+    at createPresetDescriptors (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:101:10)
+    at presets (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:47:19)
+    at mergeChainOpts (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-chain.js:320:26)
+
+Completed 200 OK in 14513ms (Views: 14509.9ms | ActiveRecord: 0.0ms | Allocations: 19413)
+
+
+Started GET "/" for ::1 at 2020-02-10 13:00:57 -0300
+Processing by PaginasEstaticasController#inicio as HTML
+  Rendering paginas_estaticas/inicio.html.erb within layouts/application
+  Rendered paginas_estaticas/inicio.html.erb within layouts/application (Duration: 7.5ms | Allocations: 676)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+[Webpacker] Hash: 00107ee7c448224189d3
+Version: webpack 4.41.5
+Time: 2354ms
+Built at: 02/10/2020 1:01:12 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-c4cceb1b0fb96e82352b.js   6.71 KiB  application  [emitted] [immutable]  application
+js/application-c4cceb1b0fb96e82352b.js.map   3.53 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-c4cceb1b0fb96e82352b.js js/application-c4cceb1b0fb96e82352b.js.map
+[./app/javascript/packs/application.js] 2.81 KiB {application} [built] [failed] [1 error]
+
+ERROR in ./app/javascript/packs/application.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+Error: Package exports for '/mnt/c/projetos/terceiro_app/node_modules/@babel/helper-compilation-targets' do not define a '.' subpath
+    at applyExports (internal/modules/cjs/loader.js:485:15)
+    at resolveExports (internal/modules/cjs/loader.js:508:12)
+    at Function.Module._findPath (internal/modules/cjs/loader.js:577:20)
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:879:27)
+    at Function.Module._load (internal/modules/cjs/loader.js:785:27)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at Object.<anonymous> (/mnt/c/projetos/terceiro_app/node_modules/@babel/preset-env/lib/debug.js:8:33)
+    at Module._compile (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at Object.<anonymous> (/mnt/c/projetos/terceiro_app/node_modules/@babel/preset-env/lib/index.js:11:14)
+    at Module._compile (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at requireModule (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/files/plugins.js:165:12)
+    at loadPreset (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/files/plugins.js:83:17)
+    at createDescriptor (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:154:9)
+    at /mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:109:50
+    at Array.map (<anonymous>)
+    at createDescriptors (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:109:29)
+    at createPresetDescriptors (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:101:10)
+    at presets (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:47:19)
+    at mergeChainOpts (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-chain.js:320:26)
+
+Completed 200 OK in 15549ms (Views: 15547.5ms | ActiveRecord: 0.0ms | Allocations: 17139)
+
+
+Started GET "/" for ::1 at 2020-02-10 13:03:20 -0300
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PaginasEstaticasController#inicio as HTML
+  Rendering paginas_estaticas/inicio.html.erb within layouts/application
+Started GET "/" for ::1 at 2020-02-10 13:03:23 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PaginasEstaticasController#inicio as HTML
+  Rendering paginas_estaticas/inicio.html.erb within layouts/application
+  Rendered paginas_estaticas/inicio.html.erb within layouts/application (Duration: 17848.0ms | Allocations: 2271377)
+[Webpacker] Compiling…
+  Rendered paginas_estaticas/inicio.html.erb within layouts/application (Duration: 17251.6ms | Allocations: 2024607)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+[Webpacker] Hash: 00107ee7c448224189d3
+Version: webpack 4.41.5
+Time: 2352ms
+Built at: 02/10/2020 1:03:54 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-c4cceb1b0fb96e82352b.js   6.71 KiB  application  [emitted] [immutable]  application
+js/application-c4cceb1b0fb96e82352b.js.map   3.53 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-c4cceb1b0fb96e82352b.js js/application-c4cceb1b0fb96e82352b.js.map
+[./app/javascript/packs/application.js] 2.81 KiB {application} [built] [failed] [1 error]
+
+ERROR in ./app/javascript/packs/application.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+Error: Package exports for '/mnt/c/projetos/terceiro_app/node_modules/@babel/helper-compilation-targets' do not define a '.' subpath
+    at applyExports (internal/modules/cjs/loader.js:485:15)
+    at resolveExports (internal/modules/cjs/loader.js:508:12)
+    at Function.Module._findPath (internal/modules/cjs/loader.js:577:20)
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:879:27)
+    at Function.Module._load (internal/modules/cjs/loader.js:785:27)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at Object.<anonymous> (/mnt/c/projetos/terceiro_app/node_modules/@babel/preset-env/lib/debug.js:8:33)
+    at Module._compile (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at Object.<anonymous> (/mnt/c/projetos/terceiro_app/node_modules/@babel/preset-env/lib/index.js:11:14)
+    at Module._compile (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at requireModule (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/files/plugins.js:165:12)
+    at loadPreset (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/files/plugins.js:83:17)
+    at createDescriptor (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:154:9)
+    at /mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:109:50
+    at Array.map (<anonymous>)
+    at createDescriptors (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:109:29)
+    at createPresetDescriptors (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:101:10)
+    at presets (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:47:19)
+    at mergeChainOpts (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-chain.js:320:26)
+
+Completed 200 OK in 33853ms (Views: 33837.2ms | ActiveRecord: 0.0ms | Allocations: 2440841)
+
+
+[Webpacker] Compilation failed:
+
+[Webpacker] Hash: 00107ee7c448224189d3
+Version: webpack 4.41.5
+Time: 2268ms
+Built at: 02/10/2020 1:03:56 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-c4cceb1b0fb96e82352b.js   6.71 KiB  application  [emitted] [immutable]  application
+js/application-c4cceb1b0fb96e82352b.js.map   3.53 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-c4cceb1b0fb96e82352b.js js/application-c4cceb1b0fb96e82352b.js.map
+[./app/javascript/packs/application.js] 2.81 KiB {application} [built] [failed] [1 error]
+
+ERROR in ./app/javascript/packs/application.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+Error: Package exports for '/mnt/c/projetos/terceiro_app/node_modules/@babel/helper-compilation-targets' do not define a '.' subpath
+    at applyExports (internal/modules/cjs/loader.js:485:15)
+    at resolveExports (internal/modules/cjs/loader.js:508:12)
+    at Function.Module._findPath (internal/modules/cjs/loader.js:577:20)
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:879:27)
+    at Function.Module._load (internal/modules/cjs/loader.js:785:27)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at Object.<anonymous> (/mnt/c/projetos/terceiro_app/node_modules/@babel/preset-env/lib/debug.js:8:33)
+    at Module._compile (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at Object.<anonymous> (/mnt/c/projetos/terceiro_app/node_modules/@babel/preset-env/lib/index.js:11:14)
+    at Module._compile (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at requireModule (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/files/plugins.js:165:12)
+    at loadPreset (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/files/plugins.js:83:17)
+    at createDescriptor (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:154:9)
+    at /mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:109:50
+    at Array.map (<anonymous>)
+    at createDescriptors (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:109:29)
+    at createPresetDescriptors (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:101:10)
+    at presets (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:47:19)
+    at mergeChainOpts (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-chain.js:320:26)
+
+Completed 200 OK in 32622ms (Views: 32619.9ms | ActiveRecord: 0.0ms | Allocations: 2045836)
+
+
+Started GET "/" for ::1 at 2020-02-10 13:09:53 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PaginasEstaticasController#inicio as HTML
+  Rendering paginas_estaticas/inicio.html.erb within layouts/application
+  Rendered paginas_estaticas/inicio.html.erb within layouts/application (Duration: 9.9ms | Allocations: 833)
+[Webpacker] Compiling…
+Started GET "/" for ::1 at 2020-02-10 13:09:59 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PaginasEstaticasController#inicio as HTML
+  Rendering paginas_estaticas/inicio.html.erb within layouts/application
+  Rendered paginas_estaticas/inicio.html.erb within layouts/application (Duration: 9.5ms | Allocations: 681)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+[Webpacker] Hash: 00107ee7c448224189d3
+Version: webpack 4.41.5
+Time: 2532ms
+Built at: 02/10/2020 1:10:09 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-c4cceb1b0fb96e82352b.js   6.71 KiB  application  [emitted] [immutable]  application
+js/application-c4cceb1b0fb96e82352b.js.map   3.53 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-c4cceb1b0fb96e82352b.js js/application-c4cceb1b0fb96e82352b.js.map
+[./app/javascript/packs/application.js] 2.81 KiB {application} [built] [failed] [1 error]
+
+ERROR in ./app/javascript/packs/application.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+Error: Package exports for '/mnt/c/projetos/terceiro_app/node_modules/@babel/helper-compilation-targets' do not define a '.' subpath
+    at applyExports (internal/modules/cjs/loader.js:485:15)
+    at resolveExports (internal/modules/cjs/loader.js:508:12)
+    at Function.Module._findPath (internal/modules/cjs/loader.js:577:20)
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:879:27)
+    at Function.Module._load (internal/modules/cjs/loader.js:785:27)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at Object.<anonymous> (/mnt/c/projetos/terceiro_app/node_modules/@babel/preset-env/lib/debug.js:8:33)
+    at Module._compile (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at Object.<anonymous> (/mnt/c/projetos/terceiro_app/node_modules/@babel/preset-env/lib/index.js:11:14)
+    at Module._compile (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at requireModule (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/files/plugins.js:165:12)
+    at loadPreset (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/files/plugins.js:83:17)
+    at createDescriptor (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:154:9)
+    at /mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:109:50
+    at Array.map (<anonymous>)
+    at createDescriptors (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:109:29)
+    at createPresetDescriptors (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:101:10)
+    at presets (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:47:19)
+    at mergeChainOpts (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-chain.js:320:26)
+
+Completed 200 OK in 15779ms (Views: 15777.0ms | ActiveRecord: 0.0ms | Allocations: 36733)
+
+
+[Webpacker] Compilation failed:
+
+[Webpacker] Hash: 00107ee7c448224189d3
+Version: webpack 4.41.5
+Time: 2112ms
+Built at: 02/10/2020 1:10:14 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-c4cceb1b0fb96e82352b.js   6.71 KiB  application  [emitted] [immutable]  application
+js/application-c4cceb1b0fb96e82352b.js.map   3.53 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-c4cceb1b0fb96e82352b.js js/application-c4cceb1b0fb96e82352b.js.map
+[./app/javascript/packs/application.js] 2.81 KiB {application} [built] [failed] [1 error]
+
+ERROR in ./app/javascript/packs/application.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+Error: Package exports for '/mnt/c/projetos/terceiro_app/node_modules/@babel/helper-compilation-targets' do not define a '.' subpath
+    at applyExports (internal/modules/cjs/loader.js:485:15)
+    at resolveExports (internal/modules/cjs/loader.js:508:12)
+    at Function.Module._findPath (internal/modules/cjs/loader.js:577:20)
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:879:27)
+    at Function.Module._load (internal/modules/cjs/loader.js:785:27)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at Object.<anonymous> (/mnt/c/projetos/terceiro_app/node_modules/@babel/preset-env/lib/debug.js:8:33)
+    at Module._compile (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at Object.<anonymous> (/mnt/c/projetos/terceiro_app/node_modules/@babel/preset-env/lib/index.js:11:14)
+    at Module._compile (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at requireModule (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/files/plugins.js:165:12)
+    at loadPreset (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/files/plugins.js:83:17)
+    at createDescriptor (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:154:9)
+    at /mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:109:50
+    at Array.map (<anonymous>)
+    at createDescriptors (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:109:29)
+    at createPresetDescriptors (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:101:10)
+    at presets (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:47:19)
+    at mergeChainOpts (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-chain.js:320:26)
+
+Completed 200 OK in 14789ms (Views: 14787.6ms | ActiveRecord: 0.0ms | Allocations: 19725)
+
+
+Started GET "/" for ::1 at 2020-02-10 13:11:31 -0300
+Processing by PaginasEstaticasController#inicio as HTML
+  Rendering paginas_estaticas/inicio.html.erb within layouts/application
+  Rendered paginas_estaticas/inicio.html.erb within layouts/application (Duration: 11.0ms | Allocations: 828)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+[Webpacker] Hash: 00107ee7c448224189d3
+Version: webpack 4.41.5
+Time: 2124ms
+Built at: 02/10/2020 1:11:44 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-c4cceb1b0fb96e82352b.js   6.71 KiB  application  [emitted] [immutable]  application
+js/application-c4cceb1b0fb96e82352b.js.map   3.53 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-c4cceb1b0fb96e82352b.js js/application-c4cceb1b0fb96e82352b.js.map
+[./app/javascript/packs/application.js] 2.81 KiB {application} [built] [failed] [1 error]
+
+ERROR in ./app/javascript/packs/application.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+Error: Package exports for '/mnt/c/projetos/terceiro_app/node_modules/@babel/helper-compilation-targets' do not define a '.' subpath
+    at applyExports (internal/modules/cjs/loader.js:485:15)
+    at resolveExports (internal/modules/cjs/loader.js:508:12)
+    at Function.Module._findPath (internal/modules/cjs/loader.js:577:20)
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:879:27)
+    at Function.Module._load (internal/modules/cjs/loader.js:785:27)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at Object.<anonymous> (/mnt/c/projetos/terceiro_app/node_modules/@babel/preset-env/lib/debug.js:8:33)
+    at Module._compile (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at Object.<anonymous> (/mnt/c/projetos/terceiro_app/node_modules/@babel/preset-env/lib/index.js:11:14)
+    at Module._compile (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1103:10)
+    at Module.load (internal/modules/cjs/loader.js:914:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:822:14)
+    at Module.require (internal/modules/cjs/loader.js:956:19)
+    at require (/mnt/c/projetos/terceiro_app/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)
+    at requireModule (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/files/plugins.js:165:12)
+    at loadPreset (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/files/plugins.js:83:17)
+    at createDescriptor (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:154:9)
+    at /mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:109:50
+    at Array.map (<anonymous>)
+    at createDescriptors (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:109:29)
+    at createPresetDescriptors (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:101:10)
+    at presets (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-descriptors.js:47:19)
+    at mergeChainOpts (/mnt/c/projetos/terceiro_app/node_modules/@babel/core/lib/config/config-chain.js:320:26)
+
+Completed 200 OK in 13158ms (Views: 13153.9ms | ActiveRecord: 0.0ms | Allocations: 16586)
+
+
